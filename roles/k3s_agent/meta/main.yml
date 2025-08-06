@@ -10,6 +10,9 @@ argument_specs:
       extra_agent_args:
         description: Extra arguments for agents nodes
 
+      extra_agent_args_rpi:
+        description: Extra arguments for agents nodes running on Raspberry Pi
+
       group_name_master:
         description: Name of the master group
         default: master
