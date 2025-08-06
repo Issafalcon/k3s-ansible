@@ -49,6 +49,13 @@
     - role: k3s_agent
       become: true
 
+- name: Setup k3s rpi agents
+  hosts: rpi_node
+  environment: "{{ proxy_env | default({}) }}"
+  roles:
+    - role: k3s_rpi_agent
+      become: true
+
 - name: Configure k3s cluster
   hosts: master
   environment: "{{ proxy_env | default({}) }}"

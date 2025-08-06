@@ -7,7 +7,7 @@ argument_specs:
         description: Virtual ip-address configured on each master
         required: true
 
-      extra_agent_args:
+      extra_agent_args_rpi:
         description: Extra arguments for agents nodes
 
       group_name_master:
